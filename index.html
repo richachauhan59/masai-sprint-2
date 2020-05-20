@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <title>EXPENSE MANAGER</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="input_section_id">
+        <form>
+            <label>Date</label>
+            <label>Choose Type</label>
+            <label>Details</label>
+            <label>Amount</label>
+            <input type="date" name="date" id="date_entry" required>
+            <select id="selc_type">
+                <option value="Income">Income</option>
+                <option value="Expense">Expenditure</option>
+            </select>
+            <input type="text" name="detail" id="detail_id" placeholder="Description" required>
+            <input type="text" name="amount" id="amount_id" placeholder="Amount" required>
+            <button type="button" id="btn_id">SUBMIT</button>
+        </form>
+    </div>
+    <div>
+        <table id="table_id" border="2">
+            <tr>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Details</th>
+                <th>Amount</th>
+            </tr>
+        </table>
+        <label id="total">Total : 00.00</label>
+    </div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
